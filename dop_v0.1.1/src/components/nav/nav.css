@@ -1,0 +1,41 @@
+nav {
+    background: rgba(0,0,0,1);
+    display: flex;
+    justify-content: left;
+    height: 7rem;
+    border-radius: 0 0 15px 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav a.menu {
+    margin-right: 5rem;
+    margin-left: 1.2rem;
+}
+
+nav a.menu .menu-btn{
+    border-radius: 7px;
+    padding: 0.6rem;
+    transition: 300ms;
+}
+
+nav a.menu .menu-btn:hover{
+    background: rgba(255, 254, 254, 0.186);
+}
+
+nav a.logo {
+    margin-right: 30rem;
+}
+
+nav a.logo .logo-btn {
+    border-radius: 7px;
+    padding: 0.6rem;
+    transition: 300ms;
+}
+
+nav a.logo .logo-btn:hover{
+    background: rgba(255, 254, 254, 0.186);
+}
