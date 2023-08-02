@@ -1,0 +1,68 @@
+ /* SidePanel.css */
+  
+  .side-panel {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the panel off the screen */
+    transition: left 0.3s ease;
+  }
+  
+  .side-panel.open {
+    left: 0; /* Slide the panel into view when open */
+  }
+  
+  .toggle-btn {
+    position: fixed;
+    top: 2.2vh;
+    left: 2.8vh;
+  }
+  
+  .toggle-btn .btn {
+    position: fixed;
+    color: white;
+    padding: 1vh;
+    border-radius: 2vh;
+    transition: 300ms ease;
+  }
+
+  .toggle-btn .btn:hover {
+    background: rgb(180, 179, 179);
+    color: black;
+  }
+  
+  .side-panel .content {
+    position: relative;
+    top: 18vh;
+    left: 2.8vh;
+  }
+
+  .content-box {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    border-radius: 2vh;
+    transition: 300ms ease;
+    margin: 6vh 0 0 2vh;
+  }
+
+  .content-box:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .content-text {
+    padding-right: 3vh;
+    margin-left: 9vh;
+  }
+  
+  .side-panel .content .content-btn {
+    margin-inline-start: 1vh;
+    padding: 0.6vh;
+    border-radius: 2vh;
+  }
+
