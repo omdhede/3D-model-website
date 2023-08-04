@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Borel', cursive;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+.container{
+    z-index: -1;
+    margin-top: 12.5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.main_scr{
+    height: 85%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_mscr{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.model_page{
+    width: 100%;
+    height: 56.25%;
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 25px;
+}
+
+.model_title{
+    height: 13%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#post_title{
+    margin-top: 1vh;
+    margin-left: 1vh;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title_parts{
+    margin-left: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_title_part{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile_part{
+    display: flex;
+    flex-direction: row;
+}
+
+#profile_logo{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+.profile_power{
+    margin-left: 1.5vh;
+}
+
+#profile_name{
+    font-size: 17px;
+}
+#profile_followers{
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 1vh;
+    color: rgb(92, 92, 92);
+}
+
+#follow_btn{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 1.5vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.right_title_part{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.like_with_count{
+    display: flex;
+    flex-direction: row;
+}
+
+#likings{
+    background-color: rgba(235, 235, 235, 0.432);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    align-items: center;
+    padding-top: 1.2vh;
+    border-radius: 50px;
+}
+
+#like_btn{
+    pointer-events: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#dislike_btn{
+    pointer-events: auto;
+    cursor: pointer;
+}
+#cline{
+    width: 2px;
+    height: 30px;
+    margin: 0 1.5vh;
+    margin-top: -1.2vh;
+    background-color: rgb(192, 192, 192);
+}
+
+#sharing{
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: rgba(235, 235, 235, 0.432);
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1.2vh;
+    border-radius: 50px;
+}
+
+#bookmarking{
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: rgba(235, 235, 235, 0.432);
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1.2vh;
+    border-radius: 50px;
+}
+
+#mores{
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: rgba(235, 235, 235, 0.432);
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1.2vh;
+    border-radius: 50%;
+}
+
+
+.desc{
+    height: 27%;
+    width: 100%;
+    background-color: rgba(158, 182, 248, 0.103);
+    border-radius: 15px;
+    overflow-y: auto;
+    padding: 2vh;
+}
+
+.post_stats{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+.desc_text{
+    font-size: 13px;
+}
+
+.right_mscr{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comments_sec{
+    width: 100%;
+    height: 45%;
+    padding: 1vh;
+    background-color: rgb(235, 255, 246);
+    border-radius: 25px;
+
+}
+
+.suggested_sec{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 25px;
+}
+
+.my_comment{
+    display: flex;
+    flex-direction: row;
+}
+.my_comment_area{
+    margin-left: 2vh;
+}
+.my_comment_btns{
+    padding: 0 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comm_btns{
+    display: flex;
+    flex-direction: row;
+}
+
+#cancel_comm{
+    background-color: white;
+    padding: 0 2vh;
+    padding-top: 1.2vh;
+    margin: 0 1vh;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+#conf_comm{
+    background-color: rgb(56, 103, 255);
+    padding: 0 2vh;
+    padding-top: 1.2vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    pointer-events: auto;
+}
