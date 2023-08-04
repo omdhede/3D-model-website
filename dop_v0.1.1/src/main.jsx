@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Nav from './components/nav/nav.jsx'
-import Home from './components/home/home.jsx'
+import Nav from './components/nav/Nav.jsx'
+// import Profile from './components/profile/profile.jsx'
 import './index.css'
 
 

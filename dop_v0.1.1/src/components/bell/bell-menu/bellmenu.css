@@ -1,0 +1,41 @@
+.drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 40vh;
+    height: 50vh;
+    position: fixed;
+    left: 150vh;
+    top: -50vh;
+    transition: top 100ms ease-out;
+    border-radius: 0 0 2vh 2vh;
+}
+
+.drop-down.open {
+    /* z-index: 1; */
+    top: 10vh;
+    transition: top 400ms ease-out;
+}
+
+.bell-btn {
+    position: fixed;
+    top: 2.3vh;
+    left: 180vh;
+    background: black;
+    padding: 1vh;
+    border-radius: 1.5vh;
+}
+
+.bell-btn:hover {
+    background: white;
+    color: black;
+}
+
+.content-bell {
+    position: relative;
+}
+
+.bell-txt {
+    margin: 4vh;
+}
