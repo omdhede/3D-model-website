@@ -5,7 +5,7 @@ import {BiSearch} from 'react-icons/bi'
 const search = () => {
   return (
     <div className='container-search'>
-        <input type="text" placeholder='Search' className='search-box' aria-label="Search" aria-autocomplete="list"/>
+        <input type="text" placeholder='Search' className='search-box' aria-label="Search" aria-autocomplete="list" id='input-box'/>
         <button className='search-btn'>
             <BiSearch size={45} className='search-icon'/>
         </button>
