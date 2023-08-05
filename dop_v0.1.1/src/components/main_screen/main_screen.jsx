@@ -4,6 +4,16 @@ import jisoo1 from '../../assets/jisoo1.jpg'
 import modiji from '../../assets/modi.jpeg'
 import kopichan from '../../assets/kopichan.png'
 import './main_screen.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeartCrack } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
+import { faFaceLaughWink } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsDown } from '@fortawesome/free-solid-svg-icons'
+
 
 const main_screen = () => {
   return (
@@ -33,12 +43,42 @@ const main_screen = () => {
                                 </div>
                                 <div id="follow_btn">Follow</div>
                             </div>
+                            
+                            <div className="right_title-part">
+                                <div className="btns" id="likings">
+                                    <div className="like_with_count">
+                                        <div id="like_btn">
+                                            <FontAwesomeIcon icon={faHeart} bounce /><p>24K</p>
+                                        </div>
+
+                                        <div id="cline"></div>
+
+                                        <div id="dislike_btn">
+                                            <FontAwesomeIcon icon={faHeartCrack} fade />
+                                        </div>
+                                    </div>
+
+                                    <div className="btns" id="sharing">
+                                        <FontAwesomeIcon icon={faPaperPlane} />
+                                        <p id="share_txt">Share</p>
+                                    </div>
+
+                                    <div className="btns" id="bookmarking">
+                                        <FontAwesomeIcon icon={faBookmark} />
+                                        <p id="bmk_txt">Save</p>
+                                    </div>
+
+                                    <div className="btns" id="mores">
+                                        <FontAwesomeIcon icon={faEllipsisVertical} />
+                                    </div>
+                                </div>
+                            </div>
     
                             {/* <div class="right_title_part">
     
                                 <div class="btns" id="likings">
                                     <div class="like_with_count">
-                                        <div id="like_btn"><i class="fa-regular fa-heart fa-bounce" style="color: #ffcce7; font-size: 2.5vh; cursor: pointer; margin-right: 1vh;"></i><p>24K</p></div>
+                                        <div id="like_btn"><p>24K</p></div>
                                     </div>
 
                                     <div id="cline"></div>
@@ -93,8 +133,8 @@ const main_screen = () => {
                                 <li>"Crazy Over You"</li>
                                 <li>"Love To Hate Me"</li>
                             </ul>
-                            {/* <br> */}
-                            {/* <br>Blackpink is a force to be reckoned with. They are talented, stylish, and successful, and they are only just getting started. */}
+                            
+                            Blackpink is a force to be reckoned with. They are talented, stylish, and successful, and they are only just getting started.
                         </div>
                     </div>
 
@@ -106,9 +146,11 @@ const main_screen = () => {
                         <div class="my_comment">
                             <img id="profile_logo" src= {profile} alt="" />
                             <div class="my_comment_area">
-                                {/* <textarea name="comment" id="my_comment_text" placeholder="Add a comment..." cols="60" rows="1" style="padding:0 1vh; padding-top: 1vh; width: 100%; border-radius: 15px; border: 0; border-bottom: 2px solid black; font-size: 14px;"></textarea> */}
+                                {/* style="padding:0 1vh; padding-top: 1vh; width: 100%; border-radius: 15px; border: 0; border-bottom: 2px solid black; font-size: 14px;" */}
+                                <textarea name="comment" id="my_comment_text" placeholder="Add a comment..." cols="60" rows="1" ></textarea>
                                 <div class="my_comment_btns">
-                                    {/* <i class="fa-regular fa-face-laugh-wink" style="font-size: 2.5vh; color: #000000; cursor: pointer; pointer-events: auto; margin-top: 1.2vh;"></i>                                     */}
+                                    {/* <i class="fa-regular fa-face-laugh-wink" style="font-size: 2.5vh; color: #000000; cursor: pointer; pointer-events: auto; margin-top: 1.2vh;"></i>*/}
+                                    <FontAwesomeIcon icon={faFaceLaughWink} />
                                     <div class="comm_btns">
                                         <div id="cancel_comm">Cancel</div>
                                         <div id="conf_comm">Comment</div>
@@ -130,6 +172,12 @@ const main_screen = () => {
                                     </div>
                                     <p id="user_comm_text">Wow, awesome, i like how you set the stage lighting even its low poly...🔥</p>
                                     <div class="user_comment_btns">
+                                        <div id="comm_likings">
+                                            <FontAwesomeIcon icon={faThumbsUp} />
+                                            <p id="comm_like_cnt">6.2K</p> 
+                                            <FontAwesomeIcon icon={faThumbsDown} />
+                                        </div>
+                                                                                
                                         {/* <div id="comm_likings">
                                             <i class="fa-regular fa-thumbs-up" style="color: #2a2b2d; font-size: 3vh;"></i>
                                             <p id="comm_like_cnt" style="font-size: 14px; margin-top: 0.7vh; margin-left: 0.5vh; font-weight: bold;">6.2K</p>                                    
@@ -153,6 +201,11 @@ const main_screen = () => {
                                     </div>
                                     <p id="user_comm_text">Great low poly Taj Mahal model! I would suggest adding more detail to the minarets and domes.</p>
                                     <div class="user_comment_btns">
+                                        <div id="comm_likings">
+                                            <FontAwesomeIcon icon={faThumbsUp} />
+                                            <p id="comm_like_cnt">6.2K</p> 
+                                            <FontAwesomeIcon icon={faThumbsDown} />
+                                        </div>
                                         {/* <div id="comm_likings">
                                             <i class="fa-regular fa-thumbs-up" style="color: #2a2b2d; font-size: 3vh;"></i>
                                             <p id="comm_like_cnt" style="font-size: 14px; margin-top: 0.7vh; margin-left: 0.5vh; font-weight: bold;">8.6K</p>                                    
@@ -178,6 +231,11 @@ const main_screen = () => {
                                         ミナレットとドームにもう少しディテールを加えると良いと思います。
                                         #低ポリゴン #タージ・マハル #模型😊</p>
                                     <div class="user_comment_btns">
+                                        <div id="comm_likings">
+                                            <FontAwesomeIcon icon={faThumbsUp} />
+                                            <p id="comm_like_cnt">6.2K</p> 
+                                            <FontAwesomeIcon icon={faThumbsDown} />
+                                        </div>
                                         {/* <div id="comm_likings">
                                             <i class="fa-regular fa-thumbs-up" style="color: #2a2b2d; font-size: 3vh;"></i>
                                             <p id="comm_like_cnt" style="font-size: 14px; margin-top: 0.7vh; margin-left: 0.5vh; font-weight: bold;">12.5K</p>                                    
