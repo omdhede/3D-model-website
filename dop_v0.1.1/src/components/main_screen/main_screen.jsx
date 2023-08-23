@@ -15,7 +15,6 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { faThumbsDown } from '@fortawesome/free-solid-svg-icons'
 import ModelViewer from '../model/ModelViewer'
 
-
 const main_screen = () => {
   return (
     <div class="wrapper">
