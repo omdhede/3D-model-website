@@ -13,7 +13,7 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
 import { faFaceLaughWink } from '@fortawesome/free-solid-svg-icons'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { faThumbsDown } from '@fortawesome/free-solid-svg-icons'
-
+import ModelViewer from '../model/ModelViewer'
 
 const main_screen = () => {
   return (
@@ -25,7 +25,7 @@ const main_screen = () => {
                 <div class="left_mscr">
 
                     <div class="model_page">
-                        
+                        <ModelViewer/>
                     </div>
                     <div class="model_title">
                         <h2 id="post_title">Low poly Taj Mahal</h2>
